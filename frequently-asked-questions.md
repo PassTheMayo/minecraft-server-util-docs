@@ -54,3 +54,17 @@ This is because you updated the package to the next major release without checki
 ## What is the `requestID` in RCON messages?
 
 The request ID is the ID of the response from the server. It is the same as the return value from `client.run()` to better identify what responses came from what command. A command may return multiple response messages, so correctly waiting for all messages to come in before closing the client is necessary. The request ID is also used within `client.execute()` to wait for the proper response from the server before returning the message. Note that `client.execute()` will only wait for one message to return before resolving, so commands with multiple responses will not work well with this method.
+
+## How do I send the favicon within a Discord embed?
+
+This question is generally outside the scope of this library, but since it is so frequently asked, I will post an answer here. The following code is written for Discord.js, and you may make adjustments as necessary. You will need to attach the `attachment` to the message whenever you are sending it.
+
+```javascript
+const attachment = new Discord.MessageAttachment(Buffer.from(data.favicon.substring(22), 'base64'), 'favicon.png');
+```
+
+```javascript
+const embed = new DiscordJS.MessageEmbed()
+    .setThumbnail('attachment://favicon.png')
+    // ...
+```
