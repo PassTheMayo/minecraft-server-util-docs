@@ -12,7 +12,7 @@ The methods documented below are used for different versions of Minecraft server
 
 | Minecraft Version | status()             | statusLegacy()       |
 | ----------------- | -------------------- | -------------------- |
-| 1.7.2 - Latest    | :white\_check\_mark: | :x:                  |
+| 1.7.2 - Latest    | :white\_check\_mark: | :white\_check\_mark: |
 | 1.6.1 - 1.6.4     | :x:                  | :white\_check\_mark: |
 | 1.4.2 - 1.5.2     | :x:                  | :white\_check\_mark: |
 | Beta 1.8 - 1.3.2  | :x:                  | :white\_check\_mark: |
@@ -167,7 +167,7 @@ util.statusFE('localhost', 25565, options)
 
 ### `statusLegacy()`
 
-This method allows pinging of all legacy Minecraft servers (1.6.4 and below). The response is consistent through all versions except for 1.3.2 and any previous version, in which the version property will be `null`. This method is encouraged over any other legacy status method and the other methods will be removed in the next major release.
+This method allows pinging of all Java Edition Minecraft servers. The response is consistent through all versions except for 1.3.2 and any previous version, in which the version property will be `null`. This method is encouraged over any other legacy status method and the other methods will be removed in the next major release. **Please note** that this method does not support returning a favicon since this is a legacy protocol.
 
 ```javascript
 const util = require('minecraft-server-util');
