@@ -60,11 +60,19 @@ The request ID is the ID of the response from the server. It is the same as the 
 This question is generally outside the scope of this library, but since it is so frequently asked, I will post an answer here. The following code is written for Discord.js, and you may make adjustments as necessary. You will need to attach the `attachment` to the message whenever you are sending it.
 
 ```javascript
-const attachment = new Discord.MessageAttachment(Buffer.from(data.favicon.substring(22), 'base64'), 'favicon.png');
-```
+const embed = new Discord.MessageEmbed()
+	.setThumbnail('attachment://favicon.png')
+	// ...
 
-```javascript
-const embed = new DiscordJS.MessageEmbed()
-    .setThumbnail('attachment://favicon.png')
-    // ...
+channel.send({
+	files: [
+		{
+			attachment: Buffer.from(result.favicon.split(',')[1], 'base64'),
+			name: 'favicon.png'
+		}
+	],
+	embeds: [
+		embed
+	]
+});
 ```
