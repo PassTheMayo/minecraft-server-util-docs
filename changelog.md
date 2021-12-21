@@ -4,6 +4,10 @@ description: A change log of all releases to the library.
 
 # Changelog
 
+## [v5.2.4](https://github.com/PassTheMayo/minecraft-server-util/tree/4a3bef82e40306d998c9b0def9d2631d44ba4829)
+
+Adjusted support for `statusLegacy()` which now allows retrieving the status of all Java Edition Minecraft servers. Please note that this method does not return a favicon, and in some cases neither a version.
+
 ## [v5.2.3](https://github.com/PassTheMayo/minecraft-server-util/tree/36d8bce0fc9cc64f172af640d079d5b389c958e0)
 
 This version adds support for the `parseAddress()` method which parses the host and port out of an address string.
