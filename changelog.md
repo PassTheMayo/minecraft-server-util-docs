@@ -1,8 +1,12 @@
 ---
-description: A change log of all releases to the library.
+description: A changelog of all releases to the library.
 ---
 
 # Changelog
+
+## [v5.2.5](https://github.com/PassTheMayo/minecraft-server-util/tree/61d331102de11a032cc8295b50c632d284c1954a)
+
+Fixed SRV lookup and connection error handling in some methods which didn't have either of these within a try/catch block, causing hanging or unhandled promise rejection errors.
 
 ## [v5.2.4](https://github.com/PassTheMayo/minecraft-server-util/tree/4a3bef82e40306d998c9b0def9d2631d44ba4829)
 
