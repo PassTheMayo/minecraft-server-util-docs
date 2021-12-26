@@ -10,12 +10,14 @@ The methods documented below are used for different versions of Minecraft server
 
 ## Protocol Methods
 
-| Minecraft Version | status()             | statusLegacy()       |
-| ----------------- | -------------------- | -------------------- |
-| 1.7.2 - Latest    | :white\_check\_mark: | :white\_check\_mark: |
-| 1.6.1 - 1.6.4     | :x:                  | :white\_check\_mark: |
-| 1.4.2 - 1.5.2     | :x:                  | :white\_check\_mark: |
-| Beta 1.8 - 1.3.2  | :x:                  | :white\_check\_mark: |
+| Minecraft Version | status()             | statusLegacy()         |
+| ----------------- | -------------------- |------------------------|
+| 1.7.2 - Latest    | :white\_check\_mark: | :white\_check\_mark: * |
+| 1.6.1 - 1.6.4     | :x:                  | :white\_check\_mark:   |
+| 1.4.2 - 1.5.2     | :x:                  | :white\_check\_mark:   |
+| Beta 1.8 - 1.3.2  | :x:                  | :white\_check\_mark:   |
+
+&ast; The `statusLegacy()` method does not return a favicon.
 
 ## Methods
 
