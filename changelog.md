@@ -4,6 +4,14 @@ description: A changelog of all releases to the library.
 
 # Changelog
 
+## [v5.2.7](https://github.com/PassTheMayo/minecraft-server-util/tree/a19037f4f1c91a2a4e840d7999d4ca4148ad59d0)
+
+This version reduces the amount of listeners used in the `TCPClient` class and the amount of wait time between packet reads.
+
+## [v5.2.6](https://github.com/PassTheMayo/minecraft-server-util/tree/83fa9155027010b13fc758d62dbe0f6b0bc5009f)
+
+This version fixes an error with methods that use UDP where the socket may have closed prematurely, resulting in an error when attempting to close the socket at the end of the method.
+
 ## [v5.2.5](https://github.com/PassTheMayo/minecraft-server-util/tree/61d331102de11a032cc8295b50c632d284c1954a)
 
 Fixed SRV lookup and connection error handling in some methods which didn't have either of these within a try/catch block, causing hanging or unhandled promise rejection errors.
