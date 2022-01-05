@@ -64,111 +64,6 @@ util.status('play.hypixel.net', 25565, options)
 }
 ```
 
-### ~~`statusFE01FA()`~~ **DEPRECATED**
-
-This method is used for retrieving the status of any Java Edition Minecraft server between versions 1.6.1 and 1.6.4. It will return basic information such as players online, max players, MOTD, favicon, version, etc. This method is deprecated in favor of `statusLegacy()` which provides status support for all legacy Minecraft servers.
-
-```javascript
-const util = require('minecraft-server-util');
-
-const options = {
-    timeout: 1000 * 5, // timeout in milliseconds
-    enableSRV: true // SRV record lookup
-};
-
-// The port and options arguments are optional, the
-// port will default to 25565 and the options will
-// use the default options.
-util.statusFE01FA('localhost', 25565, options)
-    .then((result) => console.log(result))
-    .catch((error) => console.error(error));
-```
-
-```json
-{
-        "protocolVersion": 78,
-        "version": "1.6.4",
-        "players": {
-                "online": 0,
-                "max": 20
-        },
-        "motd": {
-                "raw": "§fA Minecraft Server",
-                "clean": "A Minecraft Server",
-                "html": "<span><span style=\"color: #FFFFFF;\">A Minecraft Server</span></span>"
-        },
-        "srvRecord": { "host": "...", "port": 25565 }
-}
-```
-
-### ~~`statusFE01()`~~ **DEPRECATED**
-
-This method is used for retrieving the status of any Java Edition Minecraft server from version 1.4.2. It will return basic information such as players online, max players, MOTD, favicon, version, etc. This method is deprecated in favor of `statusLegacy()` which provides status support for all legacy Minecraft servers.
-
-```javascript
-const util = require('minecraft-server-util');
-
-const options = {
-    timeout: 1000 * 5, // timeout in milliseconds
-    enableSRV: true // SRV record lookup
-};
-
-// The port and options arguments are optional, the
-// port will default to 25565 and the options will
-// use the default options.
-util.statusFE01('localhost', 25565, options)
-    .then((result) => console.log(result))
-    .catch((error) => console.error(error));
-```
-
-```json
-{
-        "protocolVersion": 78,
-        "version": "1.6.4",
-        "players": {
-                "online": 0,
-                "max": 20
-        },
-        "motd": {
-                "raw": "§fA Minecraft Server",
-                "clean": "A Minecraft Server",
-                "html": "<span><span style=\"color: #FFFFFF;\">A Minecraft Server</span></span>"
-        },
-        "srvRecord": { "host": "...", "port": 25565 }
-}
-```
-
-### ~~`statusFE()`~~ **DEPRECATED**
-
-This method is used for retrieving the status of any Java Edition Minecraft server from versions beta 1.8 to 1.6.4. It will only return basic information about the server like players online, max players, version, etc. This method is deprecated in favor of `statusLegacy()` which provides status support for all legacy Minecraft servers.
-
-```javascript
-const util = require('minecraft-server-util');
-
-const options = {
-    timeout: 1000 * 5, // timeout in milliseconds
-    enableSRV: true // SRV record lookup
-};
-
-// The port and options arguments are optional, the
-// port will default to 25565 and the options will
-// use the default options.
-util.statusFE('localhost', 25565, options)
-    .then((result) => console.log(result))
-    .catch((error) => console.error(error));
-```
-
-```json
-{
-        "players": {
-                "online": 0,
-                "max": 20
-        },
-        "motd": "A Minecraft Server",
-        "srvRecord": { "host": "...", "port": 25565 }
-}
-```
-
 ### `statusLegacy()`
 
 This method allows pinging of all Java Edition Minecraft servers. The response is consistent through all versions except for 1.3.2 and any previous version, in which the version property will be `null`. This method is encouraged over any other legacy status method and the other methods will be removed in the next major release. **Please note** that this method does not support returning a favicon since this is a legacy protocol.
@@ -205,5 +100,122 @@ util.statusLegacy('localhost', 25565, options)
                 "html": "<span><span style=\"color: #FFFFFF;\">A Minecraft Server</span></span>"
         },
         "srvRecord": null
+}
+```
+
+### `statusFE01FA()`
+
+{% hint style="danger" %}
+`statusFE01FA()` is deprecated in favor of `statusLegacy()`
+{% endhint %}
+
+This method is used for retrieving the status of any Java Edition Minecraft server between versions 1.6.1 and 1.6.4. It will return basic information such as players online, max players, MOTD, favicon, version, etc. This method is deprecated in favor of `statusLegacy()` which provides status support for all legacy Minecraft servers.
+
+```javascript
+const util = require('minecraft-server-util');
+
+const options = {
+    timeout: 1000 * 5, // timeout in milliseconds
+    enableSRV: true // SRV record lookup
+};
+
+// The port and options arguments are optional, the
+// port will default to 25565 and the options will
+// use the default options.
+util.statusFE01FA('localhost', 25565, options)
+    .then((result) => console.log(result))
+    .catch((error) => console.error(error));
+```
+
+```json
+{
+        "protocolVersion": 78,
+        "version": "1.6.4",
+        "players": {
+                "online": 0,
+                "max": 20
+        },
+        "motd": {
+                "raw": "§fA Minecraft Server",
+                "clean": "A Minecraft Server",
+                "html": "<span><span style=\"color: #FFFFFF;\">A Minecraft Server</span></span>"
+        },
+        "srvRecord": { "host": "...", "port": 25565 }
+}
+```
+
+### `statusFE01()`
+
+{% hint style="danger" %}
+`statusFE01()` is deprecated in favor of `statusLegacy()`
+{% endhint %}
+
+This method is used for retrieving the status of any Java Edition Minecraft server from version 1.4.2. It will return basic information such as players online, max players, MOTD, favicon, version, etc. This method is deprecated in favor of `statusLegacy()` which provides status support for all legacy Minecraft servers.
+
+```javascript
+const util = require('minecraft-server-util');
+
+const options = {
+    timeout: 1000 * 5, // timeout in milliseconds
+    enableSRV: true // SRV record lookup
+};
+
+// The port and options arguments are optional, the
+// port will default to 25565 and the options will
+// use the default options.
+util.statusFE01('localhost', 25565, options)
+    .then((result) => console.log(result))
+    .catch((error) => console.error(error));
+```
+
+```json
+{
+        "protocolVersion": 78,
+        "version": "1.6.4",
+        "players": {
+                "online": 0,
+                "max": 20
+        },
+        "motd": {
+                "raw": "§fA Minecraft Server",
+                "clean": "A Minecraft Server",
+                "html": "<span><span style=\"color: #FFFFFF;\">A Minecraft Server</span></span>"
+        },
+        "srvRecord": { "host": "...", "port": 25565 }
+}
+```
+
+### `statusFE()`
+
+{% hint style="danger" %}
+`statusFE()` is deprecated in favor of `statusLegacy()`
+{% endhint %}
+
+This method is used for retrieving the status of any Java Edition Minecraft server from versions beta 1.8 to 1.6.4. It will only return basic information about the server like players online, max players, version, etc. This method is deprecated in favor of `statusLegacy()` which provides status support for all legacy Minecraft servers.
+
+```javascript
+const util = require('minecraft-server-util');
+
+const options = {
+    timeout: 1000 * 5, // timeout in milliseconds
+    enableSRV: true // SRV record lookup
+};
+
+// The port and options arguments are optional, the
+// port will default to 25565 and the options will
+// use the default options.
+util.statusFE('localhost', 25565, options)
+    .then((result) => console.log(result))
+    .catch((error) => console.error(error));
+```
+
+```json
+{
+        "players": {
+                "online": 0,
+                "max": 20
+        },
+        "motd": "A Minecraft Server",
+        "srvRecord": { "host": "...", "port": 25565 }
 }
 ```
