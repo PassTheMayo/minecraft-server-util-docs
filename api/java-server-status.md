@@ -17,9 +17,9 @@ The methods documented below are used for different versions of Minecraft server
 | 1.4.2 - 1.5.2     | :x:                  | :white\_check\_mark: (\*)   |
 | Beta 1.8 - 1.3.2  | :x:                  | :white\_check\_mark: (\*\*) |
 
-**(\*)** Favicon and sample players are not available for this protocol method.
+**(\*)** Favicon and sample players are not available for this protocol method and version.
 
-**(\*\*)** Favicon, sample players, and version information are not available for this protocol method.
+**(\*\*)** Favicon, sample players, and version information are not available for this protocol method and version.
 
 ## Methods
 
