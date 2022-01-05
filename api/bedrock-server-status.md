@@ -12,7 +12,7 @@ There is only one method for retrieving the status of a Bedrock Edition Minecraf
 
 ### `statusBedrock()`
 
-This will retrieve the status of any version Bedrock Edition Minecraft server.
+This will retrieve the status of any version Bedrock Edition or Pocket Edition Minecraft server.
 
 ```javascript
 const util = require('minecraft-server-util');
