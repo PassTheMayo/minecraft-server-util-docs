@@ -4,6 +4,10 @@ description: A changelog of all releases to the library.
 
 # Changelog
 
+## [v5.2.8](https://github.com/PassTheMayo/minecraft-server-util/tree/c3517ac2cefa9a9d5cd01af0f8b2c682e954f765)
+
+This version fixes issues when trying to ping certain Bedrock Edition Minecraft servers, as well as it fixes the undefined bug in the MOTD if the server does not send a second MOTD line.
+
 ## [v5.2.7](https://github.com/PassTheMayo/minecraft-server-util/tree/a19037f4f1c91a2a4e840d7999d4ca4148ad59d0)
 
 This version reduces the amount of listeners used in the `TCPClient` class and the amount of wait time between packet reads.
