@@ -60,7 +60,8 @@ util.status('play.hypixel.net', 25565, options)
                 "html": "<span><span style=\"color: #FFFFFF;\">             </span><span style=\"color: #55FF55;\">Hypixel Network  </span><span style=\"color: #FF5555;\">[1.8-1.17]\n                 </span><span style=\"color: #FF5555; font-weight: bold;\">BLACK FRIDAY SALE</span></span>"
         },
         "favicon": "data:image/png;base64,...",
-        "srvRecord": { "host": "...", "port": 25565 }
+        "srvRecord": { "host": "...", "port": 25565 },
+        "roundTripLatency": 39
 }
 ```
 

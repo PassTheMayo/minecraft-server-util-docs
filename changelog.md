@@ -4,6 +4,10 @@ description: A changelog of all releases to the library.
 
 # Changelog
 
+## [v5.2.9](https://github.com/PassTheMayo/minecraft-server-util/tree/68a7a16beb48226cdd5b63c45604fd3bea6c12ca)
+
+This version adds the `roundTripLatency` property to the Java status response for `status()` which is obtained by the latency between the ping and pong packets.
+
 ## [v5.2.8](https://github.com/PassTheMayo/minecraft-server-util/tree/c3517ac2cefa9a9d5cd01af0f8b2c682e954f765)
 
 This version fixes issues when trying to ping certain Bedrock Edition Minecraft servers, as well as it fixes the undefined bug in the MOTD if the server does not send a second MOTD line.
