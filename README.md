@@ -4,7 +4,7 @@ description: >-
   servers.
 ---
 
-# Home
+# 🏠 Home
 
 ## Overview
 
@@ -22,7 +22,7 @@ The goal of this package is to make it easier for developers to interact with Mi
 
 ## Installation
 
-Installing this package requires that both [Node.js](https://nodejs.org) and [npm](https://www.npmjs.com) are installed. npm is required to be located within the `PATH` variable in order for the installation command to work. Simply run the below command within your project's root directory and ensure a `package.json` file exists by using `npm init` beforehand.
+Installing this package requires that both [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) are installed. npm is required to be located within the `PATH` variable in order for the installation command to work. Simply run the below command within your project's root directory and ensure a `package.json` file exists by using `npm init` beforehand.
 
 ```shell
 npm install minecraft-server-util

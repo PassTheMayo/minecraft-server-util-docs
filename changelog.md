@@ -2,7 +2,7 @@
 description: A changelog of all releases to the library.
 ---
 
-# Changelog
+# 📰 Changelog
 
 ## [v5.2.10](https://github.com/PassTheMayo/minecraft-server-util/tree/72c6e518fe824c6baf5ab5b2415870413518e73e)
 

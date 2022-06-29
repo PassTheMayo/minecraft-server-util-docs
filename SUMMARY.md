@@ -1,8 +1,8 @@
 # Table of contents
 
-* [Home](README.md)
-* [Changelog](changelog.md)
-* [Frequently Asked Questions](frequently-asked-questions.md)
+* [🏠 Home](README.md)
+* [📰 Changelog](changelog.md)
+* [❓ Frequently Asked Questions](frequently-asked-questions.md)
 
 ## API
 
