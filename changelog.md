@@ -4,6 +4,10 @@ description: A changelog of all releases to the library.
 
 # Changelog
 
+## [v5.2.10](https://github.com/PassTheMayo/minecraft-server-util/tree/72c6e518fe824c6baf5ab5b2415870413518e73e)
+
+This version automatically trims leading and trailing spaces from the host for each method to reduce the chance of user error or incorrect input.
+
 ## [v5.2.9](https://github.com/PassTheMayo/minecraft-server-util/tree/68a7a16beb48226cdd5b63c45604fd3bea6c12ca)
 
 This version adds the `roundTripLatency` property to the Java status response for `status()` which is obtained by the latency between the ping and pong packets.
