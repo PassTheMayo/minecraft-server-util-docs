@@ -37,7 +37,7 @@ try {
 
 ## How do I use this library in the browser?
 
-This library cannot be used in the browser because TCP and UDP sockets are not supported in the browser environment. You will likely receive an error such as `Cannot find module 'net'` or `Cannot find module 'dgram'` when you attempt to bundle it. Instead, you can create a Node.js server that receives HTTP requests and send the status on the server-side. If you do not want to do this, I would recommend a quick service like [mcsrvstat.us](https://mcsrvstat.us/) instead.
+This library cannot be used in the browser because TCP and UDP sockets are not supported in the browser environment. You will likely receive an error such as `Cannot find module 'net'` or `Cannot find module 'dgram'` when you attempt to bundle it. Instead, you can create a Node.js server that receives HTTP requests and send the status on the server-side. If you do not want to do this, I would recommend a quick service like [mcstatus.io](https://mcstatus.io) instead.
 
 ## Why am I getting weird values?
 
