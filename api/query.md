@@ -19,7 +19,8 @@ const util = require('minecraft-server-util');
 
 const options = {
     sessionID: 1, // a random 32-bit signed number, optional
-    enableSRV: true // SRV record lookup
+    enableSRV: true, // SRV record lookup
+    timeout: 3000 // Timeout, in milliseconds, optional. Defaults to 5000.
 };
 
 // The port and options arguments are optional, the
@@ -58,7 +59,8 @@ const util = require('minecraft-server-util');
 
 const options = {
     sessionID: 1, // a random 32-bit signed number, optional
-    enableSRV: true // SRV record lookup
+    enableSRV: true, // SRV record lookup
+    timeout: 3000 // Timeout, in milliseconds, optional. Defaults to 5000.
 };
 
 // The port and options arguments are optional, the
