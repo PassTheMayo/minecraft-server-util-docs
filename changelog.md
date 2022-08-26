@@ -4,6 +4,10 @@ description: A changelog of all releases to the library.
 
 # 📰 Changelog
 
+## [v5.3.1](https://github.com/PassTheMayo/minecraft-server-util/tree/c69777322882ee26af7ed57f590b3f29d0aa44d4)
+
+This version changes most timeout error messages to "Server is offline or unreachable" to make it more apparent to developers that the server is offline, instead of the somewhat vague "Timed out while retrieving server status".
+
 ## [v5.3.0](https://github.com/PassTheMayo/minecraft-server-util/tree/0359673d34875b0114fdc04acc7899e586e56263)
 
 This version implements two merge requests created by [fabianwennink](https://github.com/fabianwennink) that sets the default address in the vote options to be the host and port used in connecting to the server, and also adds support for sending legacy votes (v1) to servers.
