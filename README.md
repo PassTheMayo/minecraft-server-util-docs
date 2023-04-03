@@ -4,7 +4,11 @@ description: >-
   servers.
 ---
 
-# Home
+# 🏠 Home
+
+{% hint style="warning" %}
+**Please note!** This library will be deprecated in the near future, meaning that it will no longer be actively maintained or support any future updates. It has been deprecated in favor of my other service, [mcstatus.io](https://mcstatus.io/), which is an online API for retrieving the status of any Minecraft server. This service has greatly improved reliability over this library, and has more features as well.
+{% endhint %}
 
 ## Overview
 
@@ -22,7 +26,7 @@ The goal of this package is to make it easier for developers to interact with Mi
 
 ## Installation
 
-Installing this package requires that both [Node.js](https://nodejs.org) and [npm](https://www.npmjs.com) are installed. npm is required to be located within the `PATH` variable in order for the installation command to work. Simply run the below command within your project's root directory and ensure a `package.json` file exists by using `npm init` beforehand.
+Installing this package requires that both [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) are installed. npm is required to be located within the `PATH` variable in order for the installation command to work. Simply run the below command within your project's root directory and ensure a `package.json` file exists by using `npm init` beforehand.
 
 ```shell
 npm install minecraft-server-util
